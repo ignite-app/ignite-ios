@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func getStarted(_ sender: Any) {
+        self.performSegue(withIdentifier: "showGoalPrompt", sender: nil)
+    }
+    
 }
 

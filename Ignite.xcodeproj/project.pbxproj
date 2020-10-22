@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91ECB642540F2D600BCAE93 /* DarePromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB632540F2D600BCAE93 /* DarePromptController.swift */; };
+		D91ECB662540F2FE00BCAE93 /* ConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB652540F2FE00BCAE93 /* ConfirmationController.swift */; };
+		D91ECB682540F30D00BCAE93 /* WorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB672540F30D00BCAE93 /* WorkingController.swift */; };
+		D91ECB6A2540F32500BCAE93 /* ReflectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB692540F32500BCAE93 /* ReflectionController.swift */; };
+		D91ECB6C2540F34000BCAE93 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB6B2540F34000BCAE93 /* CameraController.swift */; };
+		D91ECB6E2540F35200BCAE93 /* AftermathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB6D2540F35200BCAE93 /* AftermathController.swift */; };
+		D91ECB702540F36500BCAE93 /* SadConclusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB6F2540F36500BCAE93 /* SadConclusionController.swift */; };
+		D91ECB722540F37400BCAE93 /* HappyConclusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB712540F37400BCAE93 /* HappyConclusionController.swift */; };
 		D9A3C5E5253B776B0030BB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3C5E4253B776B0030BB0F /* AppDelegate.swift */; };
 		D9A3C5E7253B776B0030BB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3C5E6253B776B0030BB0F /* ViewController.swift */; };
 		D9A3C5EA253B776B0030BB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A3C5E8253B776B0030BB0F /* Main.storyboard */; };
@@ -14,6 +22,8 @@
 		D9A3C5EF253B776B0030BB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A3C5ED253B776B0030BB0F /* LaunchScreen.storyboard */; };
 		D9A3C5FA253B776B0030BB0F /* IgniteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3C5F9253B776B0030BB0F /* IgniteTests.swift */; };
 		D9A3C605253B776C0030BB0F /* IgniteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3C604253B776C0030BB0F /* IgniteUITests.swift */; };
+		D9A3C619253B847C0030BB0F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9A3C618253B847C0030BB0F /* Poppins-Bold.ttf */; };
+		D9A3C61B253BC0F60030BB0F /* GoalPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3C61A253BC0F60030BB0F /* GoalPromptController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D91ECB632540F2D600BCAE93 /* DarePromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarePromptController.swift; sourceTree = "<group>"; };
+		D91ECB652540F2FE00BCAE93 /* ConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationController.swift; sourceTree = "<group>"; };
+		D91ECB672540F30D00BCAE93 /* WorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingController.swift; sourceTree = "<group>"; };
+		D91ECB692540F32500BCAE93 /* ReflectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionController.swift; sourceTree = "<group>"; };
+		D91ECB6B2540F34000BCAE93 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		D91ECB6D2540F35200BCAE93 /* AftermathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AftermathController.swift; sourceTree = "<group>"; };
+		D91ECB6F2540F36500BCAE93 /* SadConclusionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadConclusionController.swift; sourceTree = "<group>"; };
+		D91ECB712540F37400BCAE93 /* HappyConclusionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyConclusionController.swift; sourceTree = "<group>"; };
 		D9A3C5E1253B776B0030BB0F /* Ignite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ignite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3C5E4253B776B0030BB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A3C5E6253B776B0030BB0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +65,8 @@
 		D9A3C600253B776C0030BB0F /* IgniteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgniteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3C604253B776C0030BB0F /* IgniteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgniteUITests.swift; sourceTree = "<group>"; };
 		D9A3C606253B776C0030BB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A3C618253B847C0030BB0F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		D9A3C61A253BC0F60030BB0F /* GoalPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPromptController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +123,16 @@
 				D9A3C5EB253B776B0030BB0F /* Assets.xcassets */,
 				D9A3C5ED253B776B0030BB0F /* LaunchScreen.storyboard */,
 				D9A3C5F0253B776B0030BB0F /* Info.plist */,
+				D9A3C617253B84610030BB0F /* New Group */,
+				D9A3C61A253BC0F60030BB0F /* GoalPromptController.swift */,
+				D91ECB632540F2D600BCAE93 /* DarePromptController.swift */,
+				D91ECB652540F2FE00BCAE93 /* ConfirmationController.swift */,
+				D91ECB672540F30D00BCAE93 /* WorkingController.swift */,
+				D91ECB692540F32500BCAE93 /* ReflectionController.swift */,
+				D91ECB6B2540F34000BCAE93 /* CameraController.swift */,
+				D91ECB6D2540F35200BCAE93 /* AftermathController.swift */,
+				D91ECB6F2540F36500BCAE93 /* SadConclusionController.swift */,
+				D91ECB712540F37400BCAE93 /* HappyConclusionController.swift */,
 			);
 			path = Ignite;
 			sourceTree = "<group>";
@@ -123,6 +153,14 @@
 				D9A3C606253B776C0030BB0F /* Info.plist */,
 			);
 			path = IgniteUITests;
+			sourceTree = "<group>";
+		};
+		D9A3C617253B84610030BB0F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3C618253B847C0030BB0F /* Poppins-Bold.ttf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +273,7 @@
 				D9A3C5EF253B776B0030BB0F /* LaunchScreen.storyboard in Resources */,
 				D9A3C5EC253B776B0030BB0F /* Assets.xcassets in Resources */,
 				D9A3C5EA253B776B0030BB0F /* Main.storyboard in Resources */,
+				D9A3C619253B847C0030BB0F /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91ECB662540F2FE00BCAE93 /* ConfirmationController.swift in Sources */,
+				D9A3C61B253BC0F60030BB0F /* GoalPromptController.swift in Sources */,
+				D91ECB722540F37400BCAE93 /* HappyConclusionController.swift in Sources */,
 				D9A3C5E7253B776B0030BB0F /* ViewController.swift in Sources */,
+				D91ECB6A2540F32500BCAE93 /* ReflectionController.swift in Sources */,
+				D91ECB682540F30D00BCAE93 /* WorkingController.swift in Sources */,
+				D91ECB702540F36500BCAE93 /* SadConclusionController.swift in Sources */,
+				D91ECB6E2540F35200BCAE93 /* AftermathController.swift in Sources */,
 				D9A3C5E5253B776B0030BB0F /* AppDelegate.swift in Sources */,
+				D91ECB6C2540F34000BCAE93 /* CameraController.swift in Sources */,
+				D91ECB642540F2D600BCAE93 /* DarePromptController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
