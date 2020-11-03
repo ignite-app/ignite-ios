@@ -9,7 +9,7 @@
 import UIKit
 
 class DarePromptController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +35,7 @@ class DarePromptController: UIViewController {
     }
     
     @IBAction func submitDare(_ sender: Any) {
+        performSegue(withIdentifier: "showConfirmation", sender: self)
     }
     
 }

@@ -9,8 +9,6 @@
 import UIKit
 
 class ConfirmationController: UIViewController {
-
-    @IBOutlet weak var goalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +36,7 @@ class ConfirmationController: UIViewController {
     }
     
     @IBAction func startWorking(_ sender: Any) {
+        self.performSegue(withIdentifier: "showWorking", sender: self)
     }
     
     

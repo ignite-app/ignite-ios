@@ -35,6 +35,7 @@ class WorkingController: UIViewController {
     */
 
     @IBAction func pressFinished(_ sender: Any) {
+        self.performSegue(withIdentifier: "showReflection", sender: self)
     }
     
 }

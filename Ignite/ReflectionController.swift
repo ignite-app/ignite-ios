@@ -11,8 +11,11 @@ import UIKit
 class ReflectionController: UIViewController {
 
     @IBOutlet weak var goalLabel: UILabel!
-    
     @IBOutlet weak var reflectionText: UITextView!
+    @IBOutlet var yesButton: UIButton!
+    @IBOutlet var noButton: UIButton!
+    
+    var metGoal = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +40,39 @@ class ReflectionController: UIViewController {
     */
 
     @IBAction func pressNo(_ sender: Any) {
+        if metGoal {
+            // Haptic feedback
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+            
+            yesButton.backgroundColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            yesButton.titleLabel?.textColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
+            
+
+            noButton.backgroundColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
+            noButton.titleLabel?.textColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            
+            metGoal = false
+        }
     }
     
     @IBAction func pressYes(_ sender: Any) {
+        if !metGoal {
+            // Haptic feedback
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+            
+            yesButton.backgroundColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
+            yesButton.titleLabel?.textColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            
+            noButton.backgroundColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            noButton.titleLabel?.textColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
+                
+            metGoal = true
+        }
     }
     
     @IBAction func submitReflection(_ sender: Any) {
+        performSegue(withIdentifier: "showCamera", sender: self)
     }
 }
