@@ -10,6 +10,8 @@ import UIKit
 
 class ConfirmationController: UIViewController {
     
+    @IBOutlet var goalLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -318,12 +318,21 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                     <action selector="returnDarePromptButton:" destination="41K-0R-FVF" eventType="touchUpInside" id="9Oa-N4-voa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Goal&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0q3-bH-Pyv">
+                                <rect key="frame" x="38" y="235" width="297" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93254786730000006" green="0.95217448469999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xwt-rh-SUZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gX8-s8-Zzf"/>
                     <connections>
+                        <outlet property="goalLabel" destination="0q3-bH-Pyv" id="Tjh-3I-1eV"/>
                         <segue destination="Wxt-hj-HiC" kind="show" identifier="returnDarePrompt" id="KvI-Zb-78R"/>
                         <segue destination="mIc-Gy-s2l" kind="show" identifier="showWorking" id="6El-Bk-B1Q"/>
                     </connections>
@@ -441,7 +450,7 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.85882352941176465" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
-                                <state key="normal" title="Yes 😞">
+                                <state key="normal" title="Yes 😁">
                                     <color key="titleColor" red="0.13900253176689148" green="0.18541863560676575" blue="0.30987679958343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -782,12 +791,11 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AXV-h9-I4z"/>
-        <segue reference="q8s-Y3-1DO"/>
+        <segue reference="2DR-OH-vug"/>
         <segue reference="i3Q-a0-5P6"/>
-        <segue reference="KvI-Zb-78R"/>
-        <segue reference="5IJ-6I-4Mq"/>
-        <segue reference="GdW-nd-Lpe"/>
+        <segue reference="Ls6-Je-fdQ"/>
+        <segue reference="5yT-7y-6ED"/>
+        <segue reference="DbK-P7-ZCM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="fire boi" width="152" height="226"/>

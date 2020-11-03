@@ -19,7 +19,7 @@ class ReflectionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -46,11 +46,10 @@ class ReflectionController: UIViewController {
             generator.impactOccurred()
             
             yesButton.backgroundColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
-            yesButton.titleLabel?.textColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
-            
+            yesButton.setTitleColor(UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00), for: .normal)
 
             noButton.backgroundColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
-            noButton.titleLabel?.textColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            noButton.setTitleColor(UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00), for: .normal)
             
             metGoal = false
         }
@@ -63,10 +62,10 @@ class ReflectionController: UIViewController {
             generator.impactOccurred()
             
             yesButton.backgroundColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
-            yesButton.titleLabel?.textColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
+            yesButton.setTitleColor(UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00), for: .normal)
             
             noButton.backgroundColor = UIColor(red: 0.80, green: 0.86, blue: 1.00, alpha: 1.00)
-            noButton.titleLabel?.textColor = UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00)
+            noButton.setTitleColor(UIColor(red: 0.14, green: 0.18, blue: 0.31, alpha: 1.00), for: .normal)
                 
             metGoal = true
         }
