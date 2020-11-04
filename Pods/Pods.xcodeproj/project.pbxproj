@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2BA2BBA6B9FA9D2EB68CA5CA301531 /* CountdownLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C817896DFBD39C8A6BB7BEBDF755F93 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */; };
+		47C0A330FC562DC2AC53BE3DEE937B78 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */; };
+		4987724757E2960084253E8B2D6A58CE /* CountdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */; };
+		4FA91E9DAB9EFA1C495A56B7055F2EB9 /* Pods-Ignite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */; };
+		5790F6D4539236D5328E4D0E51598675 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */; };
+		61199C9B5D49C4A4C877E02AC7A6998F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		63EDEF73B6D575166263A6348C8575EC /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */; };
+		6CDB59EEC150D667CD83B768B8012433 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */; };
+		75FB1BF417D02317765F8687C660787F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A75DA5235E55468C200EE7E290612428 /* CountdownLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */; };
+		AA7814DAF8D4675B1B16D7350CA40F9A /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */; };
+		AD3516E47F2AC55B8FFE8EE0872AC408 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */; };
+		B18250053B49384283B13EBA3EDA0B54 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */; };
+		BB7C9FA30F4F2E68FD92AC5605CDA0C7 /* Pods-Ignite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93E20E59750EA450136B8A93FB3037D /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */; };
+		CC4D492BE2A4DB607124B683108D22AF /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */; };
+		DF847F0DFFF13E1A135648BA588A1295 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */; };
+		EE35A1D5FB6C6E77B1286EB4EA6D120D /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */; };
+		F6A309D83F7DD2145FE455F58A54B8D6 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */; };
+		FB063D7EB5B3C47D4EF6F77A5C3C40ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5DDF8433473EF9C40F3EB7F2AD27244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DD526091D33E33B86AFCF37F8478384;
+			remoteInfo = CountdownLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountdownLabel.release.xcconfig; sourceTree = "<group>"; };
+		0B1E4EB34CE006B04863754F7B889068 /* Pods-Ignite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ignite.release.xcconfig"; sourceTree = "<group>"; };
+		12CB81B50614B5DA40108ABDDB0F47E8 /* CountdownLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CountdownLabel-Info.plist"; sourceTree = "<group>"; };
+		1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountdownLabel.swift; path = CountdownLabel/CountdownLabel.swift; sourceTree = "<group>"; };
+		21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTStringDiffResult.swift; path = CountdownLabel/LTMorphingLabel/LTStringDiffResult.swift; sourceTree = "<group>"; };
+		26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = CountdownLabel/LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		29B9659D4C532FC3A412AAEAC70EB60B /* Pods-Ignite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ignite.modulemap"; sourceTree = "<group>"; };
+		2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = CountdownLabel/LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-umbrella.h"; sourceTree = "<group>"; };
+		3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ignite-umbrella.h"; sourceTree = "<group>"; };
+		4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ignite-dummy.m"; sourceTree = "<group>"; };
+		658D9AEED103B6B7B687106DD84D5278 /* Pods-Ignite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ignite-frameworks.sh"; sourceTree = "<group>"; };
+		66EA6C50896FC2DFAC6CFEAEBEF2F36B /* Pods-Ignite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ignite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		72364D9638FCDE10F237E188E1BEDF3D /* CountdownLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CountdownLabel.modulemap; sourceTree = "<group>"; };
+		769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = CountdownLabel/LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		86718DE52104BA3157BD2FED43D9BEA7 /* Pods_Ignite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ignite.framework; path = "Pods-Ignite.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountdownLabel.framework; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = CountdownLabel/LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountdownLabel.debug.xcconfig; sourceTree = "<group>"; };
+		AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		C28D8795F52FC59BCB8AC824F0326506 /* CountdownLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-prefix.pch"; sourceTree = "<group>"; };
+		C3008784C5D4FD2525C4B5ED54C0BB73 /* Pods-Ignite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ignite-Info.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1944852E5AB0A11A18C961E41A55E0A /* Pods-Ignite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ignite-acknowledgements.plist"; sourceTree = "<group>"; };
+		E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountdownLabel-dummy.m"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ignite.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A9969F007568A3FB918568350420627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61199C9B5D49C4A4C877E02AC7A6998F /* Foundation.framework in Frameworks */,
+				FB063D7EB5B3C47D4EF6F77A5C3C40ED /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A624EF7852352176C73E358F5F209AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FB1BF417D02317765F8687C660787F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4921CEE56AE8FBA97B74C4BBEB6A8706 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72364D9638FCDE10F237E188E1BEDF3D /* CountdownLabel.modulemap */,
+				E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */,
+				12CB81B50614B5DA40108ABDDB0F47E8 /* CountdownLabel-Info.plist */,
+				C28D8795F52FC59BCB8AC824F0326506 /* CountdownLabel-prefix.pch */,
+				3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */,
+				A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */,
+				08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CountdownLabel";
+			sourceTree = "<group>";
+		};
+		51B04D1C7AFD82B065A698D489EDFF69 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A4B74621AF216096381A5F452DEFB86 /* Pods-Ignite */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6A4B74621AF216096381A5F452DEFB86 /* Pods-Ignite */ = {
+			isa = PBXGroup;
+			children = (
+				29B9659D4C532FC3A412AAEAC70EB60B /* Pods-Ignite.modulemap */,
+				66EA6C50896FC2DFAC6CFEAEBEF2F36B /* Pods-Ignite-acknowledgements.markdown */,
+				E1944852E5AB0A11A18C961E41A55E0A /* Pods-Ignite-acknowledgements.plist */,
+				4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */,
+				658D9AEED103B6B7B687106DD84D5278 /* Pods-Ignite-frameworks.sh */,
+				C3008784C5D4FD2525C4B5ED54C0BB73 /* Pods-Ignite-Info.plist */,
+				3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */,
+				FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */,
+				0B1E4EB34CE006B04863754F7B889068 /* Pods-Ignite.release.xcconfig */,
+			);
+			name = "Pods-Ignite";
+			path = "Target Support Files/Pods-Ignite";
+			sourceTree = "<group>";
+		};
+		73582741D5BB610CFDD8E66A82EF8BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2719555A69794AA380AE4E667919738 /* CountdownLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76E7F8634DC7076CC0EBF91F9B189F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */,
+				86718DE52104BA3157BD2FED43D9BEA7 /* Pods_Ignite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				73582741D5BB610CFDD8E66A82EF8BAB /* Pods */,
+				76E7F8634DC7076CC0EBF91F9B189F8F /* Products */,
+				51B04D1C7AFD82B065A698D489EDFF69 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2719555A69794AA380AE4E667919738 /* CountdownLabel */ = {
+			isa = PBXGroup;
+			children = (
+				1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */,
+				769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */,
+				2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */,
+				26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */,
+				8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */,
+				39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */,
+				27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */,
+				714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */,
+				7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */,
+				AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */,
+				99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */,
+				8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */,
+				683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */,
+				21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */,
+				4921CEE56AE8FBA97B74C4BBEB6A8706 /* Support Files */,
+			);
+			name = CountdownLabel;
+			path = CountdownLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E17BFDB4D888B579B3A36AD486A900B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2BA2BBA6B9FA9D2EB68CA5CA301531 /* CountdownLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE33E34285E20B47BA8AEBBC07EFC19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7C9FA30F4F2E68FD92AC5605CDA0C7 /* Pods-Ignite-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09487E8C6CFC82E741E5694A60593617 /* Build configuration list for PBXNativeTarget "CountdownLabel" */;
+			buildPhases = (
+				4E17BFDB4D888B579B3A36AD486A900B /* Headers */,
+				15F146C724823F03FCB62DB247B2C8AF /* Sources */,
+				6A9969F007568A3FB918568350420627 /* Frameworks */,
+				6994B60D8EC617B609AF99718DB64D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountdownLabel;
+			productName = CountdownLabel;
+			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9D890A11259B87B7A68F265FE16B476 /* Pods-Ignite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF08EF6D878ED59475683547A1B0C182 /* Build configuration list for PBXNativeTarget "Pods-Ignite" */;
+			buildPhases = (
+				EEE33E34285E20B47BA8AEBBC07EFC19 /* Headers */,
+				8A757C34B37EF113754A9ABEB45F6878 /* Sources */,
+				A624EF7852352176C73E358F5F209AC8 /* Frameworks */,
+				FE361F60ABDFAA444DD9A598B0FA4D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F4BEDE61794700821E580F256C1AD1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Ignite";
+			productName = "Pods-Ignite";
+			productReference = 86718DE52104BA3157BD2FED43D9BEA7 /* Pods_Ignite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 76E7F8634DC7076CC0EBF91F9B189F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */,
+				C9D890A11259B87B7A68F265FE16B476 /* Pods-Ignite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6994B60D8EC617B609AF99718DB64D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE361F60ABDFAA444DD9A598B0FA4D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F146C724823F03FCB62DB247B2C8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75DA5235E55468C200EE7E290612428 /* CountdownLabel-dummy.m in Sources */,
+				4987724757E2960084253E8B2D6A58CE /* CountdownLabel.swift in Sources */,
+				47C0A330FC562DC2AC53BE3DEE937B78 /* LTCharacterDiffResult.swift in Sources */,
+				EE35A1D5FB6C6E77B1286EB4EA6D120D /* LTCharacterLimbo.swift in Sources */,
+				6CDB59EEC150D667CD83B768B8012433 /* LTEasing.swift in Sources */,
+				CC4D492BE2A4DB607124B683108D22AF /* LTEmitterView.swift in Sources */,
+				AA7814DAF8D4675B1B16D7350CA40F9A /* LTMorphingEffect.swift in Sources */,
+				C93E20E59750EA450136B8A93FB3037D /* LTMorphingLabel+Anvil.swift in Sources */,
+				DF847F0DFFF13E1A135648BA588A1295 /* LTMorphingLabel+Burn.swift in Sources */,
+				5790F6D4539236D5328E4D0E51598675 /* LTMorphingLabel+Evaporate.swift in Sources */,
+				0C817896DFBD39C8A6BB7BEBDF755F93 /* LTMorphingLabel+Fall.swift in Sources */,
+				B18250053B49384283B13EBA3EDA0B54 /* LTMorphingLabel+Pixelate.swift in Sources */,
+				AD3516E47F2AC55B8FFE8EE0872AC408 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				F6A309D83F7DD2145FE455F58A54B8D6 /* LTMorphingLabel.swift in Sources */,
+				63EDEF73B6D575166263A6348C8575EC /* LTStringDiffResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A757C34B37EF113754A9ABEB45F6878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA91E9DAB9EFA1C495A56B7055F2EB9 /* Pods-Ignite-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28F4BEDE61794700821E580F256C1AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CountdownLabel;
+			target = 0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */;
+			targetProxy = E5DDF8433473EF9C40F3EB7F2AD27244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CE4438BE0C0D1F27F7824AC187DC0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58369483D1F5AB56A4CFD2680713BB23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1E4EB34CE006B04863754F7B889068 /* Pods-Ignite.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		614082C336689442C3F884356D268F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		97D50D37BFA8BE9DF8E21826DB89F767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09487E8C6CFC82E741E5694A60593617 /* Build configuration list for PBXNativeTarget "CountdownLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614082C336689442C3F884356D268F94 /* Debug */,
+				97D50D37BFA8BE9DF8E21826DB89F767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF08EF6D878ED59475683547A1B0C182 /* Build configuration list for PBXNativeTarget "Pods-Ignite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE4438BE0C0D1F27F7824AC187DC0FA /* Debug */,
+				58369483D1F5AB56A4CFD2680713BB23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

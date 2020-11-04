@@ -1,0 +1,6 @@
+framework module Pods_Ignite {
+  umbrella header "Pods-Ignite-umbrella.h"
+
+  export *
+  module * { export * }
+}

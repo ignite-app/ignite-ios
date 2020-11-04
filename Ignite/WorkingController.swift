@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import CountdownLabel
 
 class WorkingController: UIViewController {
 
     @IBOutlet weak var goalLabel: UILabel!
     
+    @IBOutlet weak var countdownTimer: CountdownLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        countdownTimer.setCountDownTime(minutes: 60*60)
+        countdownTimer.start()
     }
 
     override func didReceiveMemoryWarning() {
