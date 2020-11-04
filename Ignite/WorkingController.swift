@@ -12,8 +12,11 @@ import CountdownLabel
 class WorkingController: UIViewController {
     
     @IBOutlet weak var goalLabel: UILabel!
+
     @IBOutlet weak var countdownTimer: CountdownLabel!
     @IBOutlet weak var progressView: UIProgressView!
+    
+    
     var totalTime = Double(0)
     var timer : Timer?
     override func viewDidLoad() {
@@ -22,8 +25,8 @@ class WorkingController: UIViewController {
 //        countdownTimer.animationType = .Burn
         self.totalTime = countdownTimer.timeRemaining
         countdownTimer.start()
-        progressView.setProgress(Float(1), animated: false)
-        progressView.transform = progressView.transform.scaledBy(x: 1, y: 5)
+        
+        progressView.transform = progressView.transform.scaledBy(x: 1.5, y: 5)
         let progress = Progress()
         progressView.observedProgress = progress
         startTimer()

@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -356,14 +356,6 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert CocoaPods Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv8-39-CTD">
-                                <rect key="frame" x="67" y="324" width="241" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2684226930141449" green="0.31875202059745789" blue="0.45566123723983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-Ph-ItX">
                                 <rect key="frame" x="112" y="446" width="150" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -388,21 +380,26 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                     <action selector="pressFinished:" destination="mIc-Gy-s2l" eventType="touchUpInside" id="BbB-mx-bbW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Progress Bar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIU-B4-CZK">
-                                <rect key="frame" x="30" y="505" width="309" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-8L-JB3" customClass="CountdownLabel" customModule="CountdownLabel">
+                                <rect key="frame" x="69" y="313" width="217" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26842269299999999" green="0.31875202060000002" blue="0.45566123720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-KA-yrd">
+                                <rect key="frame" x="112" y="527" width="150" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saz-wn-zDF"/>
                         <color key="backgroundColor" red="0.13900253176689148" green="0.18541863560676575" blue="0.30987679958343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GFl-Wb-7qK"/>
                     <connections>
+                        <outlet property="countdownTimer" destination="Hxt-8L-JB3" id="142-fT-Nk0"/>
                         <outlet property="goalLabel" destination="Pvr-Zu-SXF" id="CE7-5O-Uw5"/>
+                        <outlet property="progressView" destination="Gx3-KA-yrd" id="6RD-5n-YJl"/>
                         <segue destination="Iby-zK-xGh" kind="show" identifier="showReflection" id="3cV-yV-S3c"/>
                     </connections>
                 </viewController>
@@ -790,9 +787,14 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
             <point key="canvasLocation" x="5517.6000000000004" y="701.19940029985014"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Hxt-8L-JB3">
+            <size key="intrinsicContentSize" width="80" height="41"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="2DR-OH-vug"/>
-        <segue reference="i3Q-a0-5P6"/>
+        <segue reference="3cV-yV-S3c"/>
         <segue reference="Ls6-Je-fdQ"/>
         <segue reference="5yT-7y-6ED"/>
         <segue reference="DbK-P7-ZCM"/>
