@@ -15,12 +15,13 @@ class WorkingController: UIViewController {
 
     @IBOutlet weak var countdownTimer: CountdownLabel!
     @IBOutlet weak var progressView: UIProgressView!
-    
+    var goalText = "TEST GOAL"
     
     var totalTime = Double(0)
     var timer : Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
+        goalLabel.text = goalText
         countdownTimer.setCountDownTime(minutes: 10)
 //        countdownTimer.animationType = .Burn
         self.totalTime = countdownTimer.timeRemaining
@@ -47,6 +48,9 @@ class WorkingController: UIViewController {
         let percentage = ((self.countdownTimer.timeRemaining)/(self.totalTime))
         self.progressView.setProgress(Float(percentage), animated: true)
         print(self.countdownTimer.timeRemaining)
+        if (self.countdownTimer.isPaused) {
+            self.countdownTimer.addTime(time: 1)
+        }
         if (self.countdownTimer.timeRemaining == 0) {
             self.countdownTimer.pause()
             self.timerZero()
@@ -63,6 +67,7 @@ class WorkingController: UIViewController {
     }
 
     @IBAction func pressFinished(_ sender: Any) {
+        countdownTimer.pause()
         self.performSegue(withIdentifier: "showReflection", sender: self)
     }
     
