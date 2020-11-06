@@ -47,7 +47,7 @@ class WorkingController: UIViewController {
     @objc func updateProgressBar() {
         let percentage = ((self.countdownTimer.timeRemaining)/(self.totalTime))
         self.progressView.setProgress(Float(percentage), animated: true)
-        print(self.countdownTimer.timeRemaining)
+        //print(self.countdownTimer.timeRemaining)
         if (self.countdownTimer.isPaused) {
             self.countdownTimer.addTime(time: 1)
         }

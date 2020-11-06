@@ -533,31 +533,6 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-fF-koc">
-                                <rect key="frame" x="162" y="574" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="takePicture:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="Kdl-z3-1GY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert CocoaPods/Native Camera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-Jj-GR7">
-                                <rect key="frame" x="67" y="259" width="241" height="296"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26842269299999999" green="0.31875202060000002" blue="0.45566123720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-o4-EV9">
                                 <rect key="frame" x="313" y="599" width="46" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -584,18 +559,48 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                     <action selector="returnReflectionButton:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="0b0-sI-XOf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-fF-koc">
+                                <rect key="frame" x="159" y="566.5" width="56" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                <state key="normal" backgroundImage="camera.viewfinder" catalog="system">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="takePicture:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="Kdl-z3-1GY"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-AF-IS5">
+                                <rect key="frame" x="67" y="264" width="241" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OW4-s2-ekJ" appends="YES" id="5jz-Wb-oJn"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aau-fG-md3"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AHT-NU-VtI"/>
                     <connections>
+                        <outlet property="defeatImageView" destination="dsn-AF-IS5" id="jkG-iB-QlM"/>
                         <segue destination="m7m-te-Kgm" kind="show" identifier="showAftermath" id="AXV-h9-I4z"/>
                         <segue destination="Iby-zK-xGh" kind="show" identifier="returnReflection" id="i3Q-a0-5P6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="e4V-5P-QxH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nac-pW-VW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OW4-s2-ekJ">
+                    <connections>
+                        <action selector="didTapThumbnail:" destination="ipJ-vX-H2x" id="yYG-Ko-NHE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4144.8000000000002" y="35.532233883058474"/>
         </scene>
@@ -793,13 +798,15 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="2DR-OH-vug"/>
-        <segue reference="3cV-yV-S3c"/>
+        <segue reference="AXV-h9-I4z"/>
+        <segue reference="q8s-Y3-1DO"/>
+        <segue reference="i3Q-a0-5P6"/>
         <segue reference="Ls6-Je-fdQ"/>
-        <segue reference="5yT-7y-6ED"/>
-        <segue reference="DbK-P7-ZCM"/>
+        <segue reference="5IJ-6I-4Mq"/>
+        <segue reference="e4V-5P-QxH"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
         <image name="fire boi" width="152" height="226"/>
         <image name="splash" width="375" height="402"/>
     </resources>

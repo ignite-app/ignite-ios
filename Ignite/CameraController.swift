@@ -73,8 +73,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                 let imageGenerator = AVAssetImageGenerator(asset: asset)
                 imageGenerator.appliesPreferredTrackTransform = true
                 
-                let cgImage = try imageGenerator.copyCGImage(at: .zero,
-                                                             actualTime: nil)
+                let cgImage = try imageGenerator.copyCGImage(at: .zero, actualTime: nil)
 
                 defeatImageView.image = UIImage(cgImage: cgImage)
             } catch {
@@ -88,7 +87,6 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         
         picker.dismiss(animated: true)
     }
-    
     
     @IBAction func didTapThumbnail(_ sender: Any) {
         print("Thumbnail tapped")
