@@ -10,11 +10,13 @@ import UIKit
 
 class ConfirmationController: UIViewController {
     
+    var goalModel: GoalTextModel?
+    
     @IBOutlet var goalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        goalLabel?.text = goalModel?.goalText
         // Do any additional setup after loading the view.
     }
 
