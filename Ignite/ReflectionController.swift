@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ReflectionController: UIViewController, UITextViewDelegate {
 
@@ -27,6 +28,21 @@ class ReflectionController: UIViewController, UITextViewDelegate {
         //Tap to close keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        print("Reflection Loaded")
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "LogEntry")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print("Goal: \(String(describing: data.value(forKey: "goal")!)), Completed: \(String(describing: data.value(forKey: "didCompleteGoal")!))")
+            }
+        } catch {
+            print("LogEntry retrieval failed.")
+        }
         
     }
 
@@ -79,6 +95,25 @@ class ReflectionController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func submitReflection(_ sender: Any) {
+        
+        // Save task to core data
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "LogEntry", in: context)
+        let logEntry = NSManagedObject(entity: entity!, insertInto: context)
+        
+        logEntry.setValue(self.metGoal, forKey: "didCompleteGoal")
+        logEntry.setValue(self.goalLabel.text, forKey: "goal")
+        logEntry.setValue(self.reflectionText.text, forKey: "reflection")
+        logEntry.setValue(nil, forKey: "completedTime")
+        logEntry.setValue(nil, forKey: "totalTime")
+       
+        do {
+            try context.save()
+        } catch {
+            print("Failed to save entry")
+        }
+
         performSegue(withIdentifier: "showCamera", sender: self)
     }
     
