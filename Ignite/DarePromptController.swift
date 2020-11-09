@@ -10,6 +10,8 @@ import UIKit
 
 class DarePromptController: UIViewController {
     
+    var goalModel: GoalTextModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +38,14 @@ class DarePromptController: UIViewController {
     
     @IBAction func submitDare(_ sender: Any) {
         performSegue(withIdentifier: "showConfirmation", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showConfirmation" {
+            if let destination = segue.destination as? ConfirmationController {
+                destination.goalModel = goalModel
+            }
+        }
     }
     
 }
