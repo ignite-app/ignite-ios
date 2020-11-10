@@ -43,5 +43,12 @@ class ConfirmationController: UIViewController {
         self.performSegue(withIdentifier: "showWorking", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showWorking" {
+            if let destination = segue.destination as? WorkingController {
+                destination.goalModel = goalModel
+            }
+        }
+    }
     
 }

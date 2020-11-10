@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		95A297062558F2280033E330 /* LogbookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A297052558F2280033E330 /* LogbookController.swift */; };
 		95A2972E2558F7160033E330 /* Ignite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A2972C2558F7160033E330 /* Ignite.xcdatamodeld */; };
+		95E5C554255A36060047BE7C /* GoalTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5C553255A36060047BE7C /* GoalTextModel.swift */; };
 		C14F8CD7C71F292CD96ABEB1 /* Pods_Ignite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6533B4D5291CCC880EC26E6B /* Pods_Ignite.framework */; };
 		D91ECB642540F2D600BCAE93 /* DarePromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB632540F2D600BCAE93 /* DarePromptController.swift */; };
 		D91ECB662540F2FE00BCAE93 /* ConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91ECB652540F2FE00BCAE93 /* ConfirmationController.swift */; };
@@ -32,6 +33,7 @@
 		6533B4D5291CCC880EC26E6B /* Pods_Ignite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ignite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A297052558F2280033E330 /* LogbookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookController.swift; sourceTree = "<group>"; };
 		95A2972D2558F7160033E330 /* Ignite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ignite.xcdatamodel; sourceTree = "<group>"; };
+		95E5C553255A36060047BE7C /* GoalTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTextModel.swift; sourceTree = "<group>"; };
 		D91ECB632540F2D600BCAE93 /* DarePromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarePromptController.swift; sourceTree = "<group>"; };
 		D91ECB652540F2FE00BCAE93 /* ConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationController.swift; sourceTree = "<group>"; };
 		D91ECB672540F30D00BCAE93 /* WorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				D91ECB6D2540F35200BCAE93 /* AftermathController.swift */,
 				D91ECB6F2540F36500BCAE93 /* SadConclusionController.swift */,
 				D91ECB712540F37400BCAE93 /* HappyConclusionController.swift */,
+				95E5C553255A36060047BE7C /* GoalTextModel.swift */,
 			);
 			path = Ignite;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				D91ECB722540F37400BCAE93 /* HappyConclusionController.swift in Sources */,
 				D9A3C5E7253B776B0030BB0F /* ViewController.swift in Sources */,
 				D91ECB6A2540F32500BCAE93 /* ReflectionController.swift in Sources */,
+				95E5C554255A36060047BE7C /* GoalTextModel.swift in Sources */,
 				D91ECB682540F30D00BCAE93 /* WorkingController.swift in Sources */,
 				95A297062558F2280033E330 /* LogbookController.swift in Sources */,
 				D91ECB702540F36500BCAE93 /* SadConclusionController.swift in Sources */,

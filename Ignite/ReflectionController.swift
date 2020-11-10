@@ -16,10 +16,14 @@ class ReflectionController: UIViewController, UITextViewDelegate {
     @IBOutlet var yesButton: UIButton!
     @IBOutlet var noButton: UIButton!
     
+    var goalModel: GoalTextModel?
+    
     var metGoal = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        goalLabel.text = goalModel?.goalText
         
         // Move view up/down when keyboard is opened/closed, respectively
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -29,8 +33,7 @@ class ReflectionController: UIViewController, UITextViewDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        print("Reflection Loaded")
-        
+        // Core Data testing
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "LogEntry")
@@ -103,7 +106,7 @@ class ReflectionController: UIViewController, UITextViewDelegate {
         let logEntry = NSManagedObject(entity: entity!, insertInto: context)
         
         logEntry.setValue(self.metGoal, forKey: "didCompleteGoal")
-        logEntry.setValue(self.goalLabel.text, forKey: "goal")
+        logEntry.setValue(self.goalModel!.goalText, forKey: "goal")
         logEntry.setValue(self.reflectionText.text, forKey: "reflection")
         logEntry.setValue(nil, forKey: "completedTime")
         logEntry.setValue(nil, forKey: "totalTime")
@@ -115,6 +118,14 @@ class ReflectionController: UIViewController, UITextViewDelegate {
         }
 
         performSegue(withIdentifier: "showCamera", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCamera" {
+            if let destination = segue.destination as? CameraController {
+                destination.goalModel = goalModel
+            }
+        }
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {

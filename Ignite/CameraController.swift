@@ -17,6 +17,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     var thumbnailType:String? = nil
     var defeatVideoURL:URL? = nil
     
+    var goalModel: GoalTextModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
