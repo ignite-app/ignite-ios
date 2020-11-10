@@ -45,4 +45,12 @@ class GoalPromptController: UIViewController {
     @IBAction func submitGoal(_ sender: Any) {
         self.performSegue(withIdentifier: "showDarePrompt", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDarePrompt" {
+            if let destination = segue.destination as? DarePromptController {
+                destination.goalModel = GoalTextModel(goalText: goalText.text)
+            }
+        }
+    }
 }
