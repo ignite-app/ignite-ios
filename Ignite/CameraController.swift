@@ -66,8 +66,10 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         case kUTTypeImage, kUTTypeLivePhoto:
             
             let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-            defeatImageView.image = image
+            self.defeatImageView.image = image
+            self.playIcon.isHidden = true
             break
+            
         case kUTTypeMovie:
             
             // Get first frame of video for the thumbnail
@@ -80,7 +82,9 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                 
                 let cgImage = try imageGenerator.copyCGImage(at: .zero, actualTime: nil)
 
-                defeatImageView.image = UIImage(cgImage: cgImage)
+                self.defeatImageView.image = UIImage(cgImage: cgImage)
+                self.playIcon.isHidden = false
+                self.view.bringSubviewToFront(self.playIcon)
             } catch {
                print(error.localizedDescription)
                 
@@ -95,6 +99,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     
     @IBAction func pressShare(_ sender: Any) {
     }
+    
     @IBAction func didTapThumbnail(_ sender: Any) {
         print("Thumbnail tapped")
         print(self.thumbnailType!)
@@ -116,8 +121,6 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     }
     
     @IBAction func pressArrow(_ sender: Any) {
+        performSegue(withIdentifier: "showConclusion", sender: self)
     }
-    /*@IBAction func pressHome(_ sender: Any) {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-    }*/
 }
