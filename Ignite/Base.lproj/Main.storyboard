@@ -212,10 +212,11 @@
                                 <color key="textColor" red="0.60907572509999997" green="0.67496210339999996" blue="0.85757404569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qa-AX-sLd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qa-AX-sLd">
                                 <rect key="frame" x="42" y="199" width="291" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxa-uW-la5">
                                 <rect key="frame" x="16" y="20" width="30" height="30"/>
@@ -722,6 +723,9 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <rect key="frame" x="162" y="387" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="play-button"/>
+                                <connections>
+                                    <action selector="didTapPlay:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="FNL-YD-hNK"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-4Z-bwa">
                                 <rect key="frame" x="109" y="583" width="156" height="56"/>
@@ -751,6 +755,7 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                         <outlet property="shareItTitle" destination="3Hc-Tp-Iar" id="kc6-xX-HBr"/>
                         <segue destination="Iby-zK-xGh" kind="show" identifier="returnReflection" id="i3Q-a0-5P6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="e4V-5P-QxH"/>
+                        <segue destination="w8S-uN-fh7" kind="show" identifier="showConclusion" id="JmY-qJ-MUl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nac-pW-VW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -838,9 +843,10 @@ Keep up the awesome work!</string>
         <image name="write-button" width="135" height="61"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="JmY-qJ-MUl"/>
         <segue reference="i3Q-a0-5P6"/>
         <segue reference="Ls6-Je-fdQ"/>
         <segue reference="5IJ-6I-4Mq"/>
-        <segue reference="DbK-P7-ZCM"/>
+        <segue reference="e4V-5P-QxH"/>
     </inferredMetricsTieBreakers>
 </document>

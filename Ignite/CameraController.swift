@@ -93,6 +93,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         picker.dismiss(animated: true)
     }
     
+    @IBAction func didTapPlay(_ sender: Any) {
+    }
     @IBAction func pressShare(_ sender: Any) {
     }
     @IBAction func didTapThumbnail(_ sender: Any) {
