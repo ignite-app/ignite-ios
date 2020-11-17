@@ -86,6 +86,7 @@
 		D9A3C5D8253B776B0030BB0F = {
 			isa = PBXGroup;
 			children = (
+				95A296FF2558F1D10033E330 /* Logbook */,
 				D9A3C5E3253B776B0030BB0F /* Ignite */,
 				D9A3C5F8253B776B0030BB0F /* IgniteTests */,
 				D9A3C603253B776C0030BB0F /* IgniteUITests */,
@@ -106,7 +107,6 @@
 		D9A3C5E3253B776B0030BB0F /* Ignite */ = {
 			isa = PBXGroup;
 			children = (
-				95A296FF2558F1D10033E330 /* Logbook */,
 				D9A3C5E4253B776B0030BB0F /* AppDelegate.swift */,
 				D9A3C5E6253B776B0030BB0F /* ViewController.swift */,
 				D9A3C5E8253B776B0030BB0F /* Main.storyboard */,
