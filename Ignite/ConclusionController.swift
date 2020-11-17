@@ -37,5 +37,6 @@ class ConclusionController: UIViewController {
     */
 
     @IBAction func pressHome(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
 }
