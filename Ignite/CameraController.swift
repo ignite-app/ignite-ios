@@ -14,6 +14,10 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     
     @IBOutlet var defeatImageView: UIImageView!
     
+    @IBOutlet weak var snapTitle: UILabel!
+    @IBOutlet weak var snapText: UILabel!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var playIcon: UIButton!
     @IBOutlet weak var shareItTitle: UILabel!
     @IBOutlet weak var shareItText: UILabel!
