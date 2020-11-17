@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SadConclusionController: UIViewController {
+class ConclusionController: UIViewController {
 
     @IBOutlet weak var happyText: UILabel!
     @IBOutlet weak var sadText: UILabel!

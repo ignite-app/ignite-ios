@@ -14,8 +14,7 @@ class GoalPromptController: UIViewController {
     
     @IBOutlet weak var goalText: UITextView!
     
-    @IBOutlet weak var timeText: UITextField!
-    
+    @IBOutlet weak var timeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,5 +51,7 @@ class GoalPromptController: UIViewController {
                 destination.goalModel = GoalTextModel(goalText: goalText.text)
             }
         }
+    }
+    @IBAction func didTapTime(_ sender: Any) {
     }
 }

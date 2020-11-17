@@ -14,6 +14,9 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     
     @IBOutlet var defeatImageView: UIImageView!
     
+    @IBOutlet weak var playIcon: UIButton!
+    @IBOutlet weak var shareItTitle: UILabel!
+    @IBOutlet weak var shareItText: UILabel!
     var thumbnailType:String? = nil
     var defeatVideoURL:URL? = nil
     
@@ -90,6 +93,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         picker.dismiss(animated: true)
     }
     
+    @IBAction func pressShare(_ sender: Any) {
+    }
     @IBAction func didTapThumbnail(_ sender: Any) {
         print("Thumbnail tapped")
         print(self.thumbnailType!)
@@ -110,7 +115,9 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         }
     }
     
-    @IBAction func pressHome(_ sender: Any) {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    @IBAction func pressArrow(_ sender: Any) {
     }
+    /*@IBAction func pressHome(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }*/
 }

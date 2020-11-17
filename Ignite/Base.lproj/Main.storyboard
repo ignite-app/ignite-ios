@@ -141,14 +141,6 @@
                                     <action selector="returnLandingButton:" destination="FUo-v1-HIZ" eventType="touchUpInside" id="Yzc-hE-Rtz"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01:00:00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mD-ii-rK3">
-                                <rect key="frame" x="44" y="437" width="286" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93254786729812622" green="0.95217448472976685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.33375793695449829" green="0.41107854247093201" blue="0.62264591455459595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S9s-hU-xDd">
                                 <rect key="frame" x="44" y="200" width="286" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -164,6 +156,23 @@
                                 <color key="textColor" red="0.13890299201011658" green="0.18961775302886963" blue="0.30578970909118652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sl-XP-6XE">
+                                <rect key="frame" x="44" y="450" width="286" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93254786730000006" green="0.95217448469999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <state key="normal" title="01:00:00">
+                                    <color key="titleColor" red="0.33375793695449829" green="0.41107854247093201" blue="0.62264591455459595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTime:" destination="FUo-v1-HIZ" eventType="touchUpInside" id="9iH-aJ-Rdg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="gME-PR-Qqa"/>
@@ -171,7 +180,7 @@
                     <navigationItem key="navigationItem" id="X7G-wO-Axa"/>
                     <connections>
                         <outlet property="goalText" destination="S9s-hU-xDd" id="Xmf-0k-8tb"/>
-                        <outlet property="timeText" destination="8mD-ii-rK3" id="1N3-vO-i1h"/>
+                        <outlet property="timeButton" destination="0sl-XP-6XE" id="5oJ-wc-cvF"/>
                         <outlet property="welcomeTitle" destination="feb-lh-Lpc" id="pSc-45-Gpl"/>
                         <segue destination="Wxt-hj-HiC" kind="show" identifier="showDarePrompt" id="Ls6-Je-fdQ"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="returnLanding" id="DbK-P7-ZCM"/>
@@ -244,7 +253,7 @@
                                     <segue destination="41K-0R-FVF" kind="show" identifier="showConfirmation" id="RsU-0S-MLh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1b-P7-AQ7">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1b-P7-AQ7">
                                 <rect key="frame" x="21" y="192" width="332" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -263,20 +272,8 @@
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-jk-Enu">
-                                        <rect key="frame" x="22" y="206" width="130" height="56"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.93254786729812622" green="0.95217448472976685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
-                                        <state key="normal" title="Back">
-                                            <color key="titleColor" red="0.13900253176689148" green="0.18541863560676575" blue="0.30987679958343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pressBackPopup:" destination="Wxt-hj-HiC" eventType="touchUpInside" id="pEZ-Al-AcH"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6w-m7-WcW">
-                                        <rect key="frame" x="178" y="206" width="130" height="56"/>
+                                        <rect key="frame" x="72" y="206" width="187" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.13900253176689148" green="0.18541863560676575" blue="0.30987679958343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
@@ -298,20 +295,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98015671968460083" green="0.98424428701400757" blue="0.9924054741859436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I8-In-DOQ">
-                                <rect key="frame" x="203" y="501" width="135" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="shuffle-button"/>
-                                <connections>
-                                    <action selector="pressShuffleDares:" destination="Wxt-hj-HiC" eventType="touchUpInside" id="87x-GO-Rwr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE3-zR-BaH">
-                                <rect key="frame" x="42" y="501" width="135" height="61"/>
+                                <rect key="frame" x="198" y="508" width="135" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="write-button"/>
                                 <connections>
                                     <action selector="pressCustomDare:" destination="Wxt-hj-HiC" eventType="touchUpInside" id="lMG-hW-8yc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I8-In-DOQ">
+                                <rect key="frame" x="42" y="508" width="135" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="shuffle-button"/>
+                                <connections>
+                                    <action selector="pressShuffleDares:" destination="Wxt-hj-HiC" eventType="touchUpInside" id="87x-GO-Rwr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -468,7 +465,7 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <rect key="frame" x="112" y="527" width="150" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lkm-ga-Bbc">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lkm-ga-Bbc">
                                 <rect key="frame" x="35.199999999999818" y="116" width="304" height="358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -661,9 +658,9 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-o4-EV9">
                                 <rect key="frame" x="306" y="593" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home-light"/>
+                                <state key="normal" image="arrow-button"/>
                                 <connections>
-                                    <action selector="pressHome:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="rix-gn-qZI"/>
+                                    <action selector="pressArrow:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="eMe-1f-4RS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-Yg-MJD">
@@ -683,11 +680,10 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                     <action selector="returnReflectionButton:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="0b0-sI-XOf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-fF-koc">
-                                <rect key="frame" x="159" y="566.5" width="56" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-fF-koc">
+                                <rect key="frame" x="123" y="553.5" width="128" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
-                                <state key="normal" backgroundImage="camera.viewfinder">
+                                <state key="normal" image="camera-button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -707,10 +703,42 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                     <outletCollection property="gestureRecognizers" destination="OW4-s2-ekJ" appends="YES" id="5jz-Wb-oJn"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-camera" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-61-nq3">
-                                <rect key="frame" x="67" y="252" width="241" height="306"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qev-td-5iL">
+                                <rect key="frame" x="34" y="112" width="306" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <string key="text">Accountability is always better with friends! Before you go back to finishing your work, feel free to share this memory with your friends!</string>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hc-Tp-Iar">
+                                <rect key="frame" x="42" y="20" width="291" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="32"/>
+                                <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-SS-N4X">
+                                <rect key="frame" x="162" y="387" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play-button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-4Z-bwa">
+                                <rect key="frame" x="109" y="583" width="156" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80086624620000002" green="0.18743214010000001" blue="0.23166507480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="share-button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressShare:" destination="ipJ-vX-H2x" eventType="touchUpInside" id="BQi-5U-RBZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="aau-fG-md3"/>
@@ -718,7 +746,9 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                     <navigationItem key="navigationItem" id="AHT-NU-VtI"/>
                     <connections>
                         <outlet property="defeatImageView" destination="dsn-AF-IS5" id="jkG-iB-QlM"/>
-                        <segue destination="m7m-te-Kgm" kind="show" identifier="showAftermath" id="AXV-h9-I4z"/>
+                        <outlet property="playIcon" destination="PEe-SS-N4X" id="ziB-q2-PED"/>
+                        <outlet property="shareItText" destination="qev-td-5iL" id="yzK-bz-FnC"/>
+                        <outlet property="shareItTitle" destination="3Hc-Tp-Iar" id="kc6-xX-HBr"/>
                         <segue destination="Iby-zK-xGh" kind="show" identifier="returnReflection" id="i3Q-a0-5P6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="e4V-5P-QxH"/>
                     </connections>
@@ -732,103 +762,10 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
             </objects>
             <point key="canvasLocation" x="4144.8000000000002" y="35.532233883058474"/>
         </scene>
-        <!--Aftermath Controller-->
-        <scene sceneID="cWj-CP-4gP">
-            <objects>
-                <viewController id="m7m-te-Kgm" customClass="AftermathController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IUn-f9-Wb5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hc-Tp-Iar">
-                                <rect key="frame" x="41" y="20" width="291" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="32"/>
-                                <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qev-td-5iL">
-                                <rect key="frame" x="33" y="112" width="306" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Accountability is always better with friends! Before you go back to finishing your work, feel free to share this memory with your friends!</string>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
-                                <color key="textColor" red="0.138902992" green="0.189617753" blue="0.30578970909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-0F-hxs">
-                                <rect key="frame" x="67" y="259" width="241" height="296"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-4Z-bwa">
-                                <rect key="frame" x="109" y="573" width="156" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80086624620000002" green="0.18743214010000001" blue="0.23166507480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
-                                <state key="normal" title="Share!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pressShare:" destination="m7m-te-Kgm" eventType="touchUpInside" id="ooO-Va-h10"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzv-eY-FuJ">
-                                <rect key="frame" x="306" y="593" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home-light"/>
-                                <connections>
-                                    <action selector="pressHome:" destination="m7m-te-Kgm" eventType="touchUpInside" id="Mo0-e0-PJL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kem-Wn-Pre">
-                                <rect key="frame" x="16" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93254786730000006" green="0.95217448469999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="◀">
-                                    <color key="titleColor" red="0.82201427220000001" green="0.86098909379999999" blue="0.9648147225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="returnCameraButton:" destination="m7m-te-Kgm" eventType="touchUpInside" id="egj-D5-vdH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-SS-N4X">
-                                <rect key="frame" x="162" y="382" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="play-button"/>
-                                <connections>
-                                    <action selector="pressPlay:" destination="m7m-te-Kgm" eventType="touchUpInside" id="bnO-a4-kBj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="S0y-nb-q78"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="xWr-ou-NX3"/>
-                    <connections>
-                        <outlet property="finalImage" destination="QmD-0F-hxs" id="bfe-9r-KOe"/>
-                        <segue destination="w8S-uN-fh7" kind="show" identifier="showSad" id="mkm-ux-Yex"/>
-                        <segue destination="ipJ-vX-H2x" kind="show" identifier="returnCamera" id="q8s-Y3-1DO"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="Mix-LK-8cU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FCq-Zd-N3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4829.6000000000004" y="35.532233883058474"/>
-        </scene>
-        <!--Sad Conclusion Controller-->
+        <!--Conclusion Controller-->
         <scene sceneID="GnT-lW-U6Z">
             <objects>
-                <viewController id="w8S-uN-fh7" customClass="SadConclusionController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w8S-uN-fh7" customClass="ConclusionController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rjb-Ru-bCy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,26 +823,24 @@ Keep up the awesome work!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="camera.viewfinder" width="128" height="115"/>
+        <image name="arrow-button" width="60" height="60"/>
+        <image name="camera-button" width="70" height="70"/>
         <image name="close-button" width="23" height="23"/>
         <image name="close-dark" width="23" height="23"/>
         <image name="fire boi" width="152" height="226"/>
         <image name="happy-fire" width="258" height="316"/>
         <image name="home-dark" width="80" height="80"/>
-        <image name="home-light" width="60" height="60"/>
-        <image name="placeholder-camera" width="261" height="347"/>
         <image name="play-button" width="512" height="512"/>
         <image name="sad-fire" width="258" height="316"/>
+        <image name="share-button" width="156" height="56"/>
         <image name="shuffle-button" width="135" height="61"/>
         <image name="splash" width="375" height="402"/>
         <image name="write-button" width="135" height="61"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mkm-ux-Yex"/>
-        <segue reference="q8s-Y3-1DO"/>
         <segue reference="i3Q-a0-5P6"/>
         <segue reference="Ls6-Je-fdQ"/>
         <segue reference="5IJ-6I-4Mq"/>
-        <segue reference="Mix-LK-8cU"/>
+        <segue reference="DbK-P7-ZCM"/>
     </inferredMetricsTieBreakers>
 </document>
