@@ -93,20 +93,12 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         default:
             break
         }
-        
+                
         picker.dismiss(animated: true)
     }
     
-    @IBAction func didTapPlay(_ sender: Any) {
-    }
-    @IBAction func pressShare(_ sender: Any) {
-    }
-    
-    @IBAction func didTapThumbnail(_ sender: Any) {
-        print("Thumbnail tapped")
-        print(self.thumbnailType!)
+    func playVideo() {
         if self.thumbnailType == "public.movie" && self.defeatVideoURL != nil {
-            print("Video tapped")
             
             // Create an AVPlayer, passing it the HTTP Live Streaming URL.
             let player = AVPlayer(url: self.defeatVideoURL!)
@@ -120,6 +112,17 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                 player.play()
             }
         }
+    }
+    
+    @IBAction func pressShare(_ sender: Any) {
+    }
+    
+    @IBAction func didTapPlay(_ sender: Any) {
+        playVideo()
+    }
+    
+    @IBAction func didTapThumbnail(_ sender: Any) {
+        playVideo()
     }
     
     @IBAction func pressArrow(_ sender: Any) {
