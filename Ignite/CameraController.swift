@@ -101,13 +101,15 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         
         self.snapTitle.isHidden = true
         self.snapText.isHidden = true
+        
         self.shareItTitle.isHidden = false
-        self.view.bringSubviewToFront(self.shareItTitle)
+        //self.view.bringSubviewToFront(self.shareItTitle)
         self.shareItText.isHidden = false
-        self.view.bringSubviewToFront(self.shareItText)
+        //self.view.bringSubviewToFront(self.shareItText)
+        
         self.cameraButton.isHidden = true
         self.shareButton.isHidden = false
-        self.view.bringSubviewToFront(self.cameraButton)
+        //self.view.bringSubviewToFront(self.cameraButton)
         
         picker.dismiss(animated: true)
     }

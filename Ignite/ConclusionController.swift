@@ -1,5 +1,5 @@
 //
-//  SadConclusionController.swift
+//  ConclusionController.swift
 //  Ignite
 //
 //  Created by ageor0114 on 10/21/20.
