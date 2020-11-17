@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -356,13 +357,6 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-Ph-ItX">
-                                <rect key="frame" x="112" y="446" width="150" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
-                                <color key="textColor" red="0.2684226930141449" green="0.31875202059745789" blue="0.45566123723983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8Z-7I-936">
                                 <rect key="frame" x="88" y="572" width="198" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -387,10 +381,23 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-KA-yrd">
-                                <rect key="frame" x="112" y="527" width="150" height="4"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-Ph-ItX">
+                                <rect key="frame" x="112" y="446" width="150" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <color key="textColor" red="0.2684226930141449" green="0.31875202059745789" blue="0.45566123723983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-qb-9Hm">
+                                <rect key="frame" x="47" y="498" width="261" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rope" translatesAutoresizingMaskIntoConstraints="NO" id="AAb-QP-pet">
+                                        <rect key="frame" x="-12" y="-48" width="273" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saz-wn-zDF"/>
                         <color key="backgroundColor" red="0.13900253176689148" green="0.18541863560676575" blue="0.30987679958343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -399,7 +406,8 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                     <connections>
                         <outlet property="countdownTimer" destination="Hxt-8L-JB3" id="142-fT-Nk0"/>
                         <outlet property="goalLabel" destination="Pvr-Zu-SXF" id="CE7-5O-Uw5"/>
-                        <outlet property="progressView" destination="Gx3-KA-yrd" id="6RD-5n-YJl"/>
+                        <outlet property="rope" destination="AAb-QP-pet" id="hvs-0b-06J"/>
+                        <outlet property="ropeContainer" destination="fdb-qb-9Hm" id="Qcc-M1-OQC"/>
                         <segue destination="Iby-zK-xGh" kind="show" identifier="showReflection" id="3cV-yV-S3c"/>
                     </connections>
                 </viewController>
@@ -791,6 +799,21 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
             </objects>
             <point key="canvasLocation" x="5517.6000000000004" y="701.19940029985014"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ySQ-sJ-LAz">
+            <objects>
+                <viewController id="Eqb-I9-xbM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FHk-fL-NfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Sap-XU-k8j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gg7-Pw-kfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="452"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="Hxt-8L-JB3">
@@ -798,16 +821,19 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="AXV-h9-I4z"/>
         <segue reference="q8s-Y3-1DO"/>
-        <segue reference="i3Q-a0-5P6"/>
+        <segue reference="3cV-yV-S3c"/>
         <segue reference="Ls6-Je-fdQ"/>
-        <segue reference="5IJ-6I-4Mq"/>
-        <segue reference="e4V-5P-QxH"/>
+        <segue reference="5yT-7y-6ED"/>
+        <segue reference="Mix-LK-8cU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
         <image name="fire boi" width="152" height="226"/>
+        <image name="rope" width="302" height="167"/>
         <image name="splash" width="375" height="402"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
