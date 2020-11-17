@@ -92,11 +92,11 @@ class WorkingController: UIViewController {
             self.countdownTimer.pause()
             self.timerZero()
         }
-        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
             print(self.rope.center.x)
             print(self.rope.frame.width -         self.rope.frame.width * CGFloat(percentage))
             print(CGFloat(percentage))
-            self.rope.center.x -=  CGFloat(self.rope.frame.width + 4) * CGFloat(percentage)
+            self.rope.center.x -=  CGFloat(self.rope.frame.width + 2) * CGFloat(percentage)
 //            self.rope.transform = CGAffineTransform(translationX:-(          self.rope.frame.width * CGFloat(percentage)), y: CGFloat(0))
 
         }, completion: nil)
