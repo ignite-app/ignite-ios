@@ -11,12 +11,15 @@ import UIKit
 class ConfirmationController: UIViewController {
     
     var goalModel: GoalTextModel?
+    var chosenDare: String = ""
     
     @IBOutlet var goalLabel: UILabel!
+    @IBOutlet weak var dareLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         goalLabel?.text = goalModel?.goalText
+        dareLabel.text = "You've agreed to '\(chosenDare)'."
         // Do any additional setup after loading the view.
     }
 
@@ -37,6 +40,7 @@ class ConfirmationController: UIViewController {
     */
     
     @IBAction func returnDarePromptButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "returnDarePrompt", sender: nil)
     }
     
     @IBAction func startWorking(_ sender: Any) {

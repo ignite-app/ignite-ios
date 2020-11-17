@@ -9,29 +9,29 @@
 /* Begin PBXBuildFile section */
 		0B2BA2BBA6B9FA9D2EB68CA5CA301531 /* CountdownLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C817896DFBD39C8A6BB7BEBDF755F93 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */; };
+		16D9E10E38F16D054EB9213716D60D05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		2C8D22CA512A36B45659AF312802AC8F /* Pods-Ignite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32026F49587523E2C626BA361B9679FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		47C0A330FC562DC2AC53BE3DEE937B78 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */; };
 		4987724757E2960084253E8B2D6A58CE /* CountdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */; };
-		4FA91E9DAB9EFA1C495A56B7055F2EB9 /* Pods-Ignite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */; };
 		5790F6D4539236D5328E4D0E51598675 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */; };
-		61199C9B5D49C4A4C877E02AC7A6998F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		63EDEF73B6D575166263A6348C8575EC /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */; };
 		6CDB59EEC150D667CD83B768B8012433 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */; };
-		75FB1BF417D02317765F8687C660787F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		8861E1157AB6236ED0A0217B6E397F55 /* Pods-Ignite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */; };
 		A75DA5235E55468C200EE7E290612428 /* CountdownLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */; };
 		AA7814DAF8D4675B1B16D7350CA40F9A /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */; };
 		AD3516E47F2AC55B8FFE8EE0872AC408 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */; };
 		B18250053B49384283B13EBA3EDA0B54 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */; };
-		BB7C9FA30F4F2E68FD92AC5605CDA0C7 /* Pods-Ignite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93E20E59750EA450136B8A93FB3037D /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */; };
 		CC4D492BE2A4DB607124B683108D22AF /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */; };
 		DF847F0DFFF13E1A135648BA588A1295 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */; };
+		E890B36AAA914F5DA657795F205C3A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		EE35A1D5FB6C6E77B1286EB4EA6D120D /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */; };
 		F6A309D83F7DD2145FE455F58A54B8D6 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */; };
-		FB063D7EB5B3C47D4EF6F77A5C3C40ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E5DDF8433473EF9C40F3EB7F2AD27244 /* PBXContainerItemProxy */ = {
+		E59ACCB9BB591BC04B345DD9FC15D46A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -50,9 +50,11 @@
 		27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
 		29B9659D4C532FC3A412AAEAC70EB60B /* Pods-Ignite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ignite.modulemap"; sourceTree = "<group>"; };
 		2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = CountdownLabel/LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
 		3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-umbrella.h"; sourceTree = "<group>"; };
 		3CA3781C561395F77CEB48FE209FE120 /* Pods-Ignite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ignite-umbrella.h"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4E17E7DB79CCC0FE2654FB7F67ACA370 /* Pods-Ignite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ignite-dummy.m"; sourceTree = "<group>"; };
 		658D9AEED103B6B7B687106DD84D5278 /* Pods-Ignite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ignite-frameworks.sh"; sourceTree = "<group>"; };
 		66EA6C50896FC2DFAC6CFEAEBEF2F36B /* Pods-Ignite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ignite-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -71,10 +73,8 @@
 		AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
 		C28D8795F52FC59BCB8AC824F0326506 /* CountdownLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-prefix.pch"; sourceTree = "<group>"; };
 		C3008784C5D4FD2525C4B5ED54C0BB73 /* Pods-Ignite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ignite-Info.plist"; sourceTree = "<group>"; };
-		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1944852E5AB0A11A18C961E41A55E0A /* Pods-Ignite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ignite-acknowledgements.plist"; sourceTree = "<group>"; };
 		E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountdownLabel-dummy.m"; sourceTree = "<group>"; };
-		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ignite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,16 +83,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61199C9B5D49C4A4C877E02AC7A6998F /* Foundation.framework in Frameworks */,
-				FB063D7EB5B3C47D4EF6F77A5C3C40ED /* UIKit.framework in Frameworks */,
+				32026F49587523E2C626BA361B9679FF /* Foundation.framework in Frameworks */,
+				16D9E10E38F16D054EB9213716D60D05 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A624EF7852352176C73E358F5F209AC8 /* Frameworks */ = {
+		B7D864F7258EA117C9257F253CA96974 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FB1BF417D02317765F8687C660787F /* Foundation.framework in Frameworks */,
+				E890B36AAA914F5DA657795F205C3A27 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,15 +128,6 @@
 				6A4B74621AF216096381A5F452DEFB86 /* Pods-Ignite */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
-				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		6A4B74621AF216096381A5F452DEFB86 /* Pods-Ignite */ = {
@@ -207,6 +198,15 @@
 			path = CountdownLabel;
 			sourceTree = "<group>";
 		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -218,11 +218,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEE33E34285E20B47BA8AEBBC07EFC19 /* Headers */ = {
+		7050DDB4226E6D04FC354066C04D1C41 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7C9FA30F4F2E68FD92AC5605CDA0C7 /* Pods-Ignite-umbrella.h in Headers */,
+				2C8D22CA512A36B45659AF312802AC8F /* Pods-Ignite-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,17 +249,17 @@
 		};
 		C9D890A11259B87B7A68F265FE16B476 /* Pods-Ignite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF08EF6D878ED59475683547A1B0C182 /* Build configuration list for PBXNativeTarget "Pods-Ignite" */;
+			buildConfigurationList = 2C95B8270BBD1C95014894E95A09F8DF /* Build configuration list for PBXNativeTarget "Pods-Ignite" */;
 			buildPhases = (
-				EEE33E34285E20B47BA8AEBBC07EFC19 /* Headers */,
-				8A757C34B37EF113754A9ABEB45F6878 /* Sources */,
-				A624EF7852352176C73E358F5F209AC8 /* Frameworks */,
-				FE361F60ABDFAA444DD9A598B0FA4D7A /* Resources */,
+				7050DDB4226E6D04FC354066C04D1C41 /* Headers */,
+				8D65DC93FA0041E3449A9348C7ED2CB2 /* Sources */,
+				B7D864F7258EA117C9257F253CA96974 /* Frameworks */,
+				06D02E39CD579806361ED1E3E9A026E3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				28F4BEDE61794700821E580F256C1AD1 /* PBXTargetDependency */,
+				35C5F09379EEADFD3673153CB04C06C3 /* PBXTargetDependency */,
 			);
 			name = "Pods-Ignite";
 			productName = "Pods-Ignite";
@@ -295,14 +295,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6994B60D8EC617B609AF99718DB64D15 /* Resources */ = {
+		06D02E39CD579806361ED1E3E9A026E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE361F60ABDFAA444DD9A598B0FA4D7A /* Resources */ = {
+		6994B60D8EC617B609AF99718DB64D15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,131 +334,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A757C34B37EF113754A9ABEB45F6878 /* Sources */ = {
+		8D65DC93FA0041E3449A9348C7ED2CB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA91E9DAB9EFA1C495A56B7055F2EB9 /* Pods-Ignite-dummy.m in Sources */,
+				8861E1157AB6236ED0A0217B6E397F55 /* Pods-Ignite-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		28F4BEDE61794700821E580F256C1AD1 /* PBXTargetDependency */ = {
+		35C5F09379EEADFD3673153CB04C06C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CountdownLabel;
 			target = 0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */;
-			targetProxy = E5DDF8433473EF9C40F3EB7F2AD27244 /* PBXContainerItemProxy */;
+			targetProxy = E59ACCB9BB591BC04B345DD9FC15D46A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1CE4438BE0C0D1F27F7824AC187DC0FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		58369483D1F5AB56A4CFD2680713BB23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B1E4EB34CE006B04863754F7B889068 /* Pods-Ignite.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		614082C336689442C3F884356D268F94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
-				PRODUCT_MODULE_NAME = CountdownLabel;
-				PRODUCT_NAME = CountdownLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -481,7 +380,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -516,11 +414,14 @@
 			};
 			name = Release;
 		};
-		97D50D37BFA8BE9DF8E21826DB89F767 /* Release */ = {
+		8587C18B80469C5729FCD9010FE937E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */;
+			baseConfigurationReference = 0B1E4EB34CE006B04863754F7B889068 /* Pods-Ignite.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -529,18 +430,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
-				PRODUCT_MODULE_NAME = CountdownLabel;
-				PRODUCT_NAME = CountdownLabel;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -548,11 +450,45 @@
 			};
 			name = Release;
 		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		BE34E3A1BAB768F1F9B6150D7E7A130E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA81728842FA6623D08823ED0D555E5 /* Pods-Ignite.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ignite/Pods-Ignite.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -575,7 +511,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -614,14 +549,88 @@
 			};
 			name = Debug;
 		};
+		ED8C1D9BEEE094CF577EE7307BEC4644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3CCD1BC4E0FC8C2502A4D99ABE8B17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		09487E8C6CFC82E741E5694A60593617 /* Build configuration list for PBXNativeTarget "CountdownLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				614082C336689442C3F884356D268F94 /* Debug */,
-				97D50D37BFA8BE9DF8E21826DB89F767 /* Release */,
+				ED8C1D9BEEE094CF577EE7307BEC4644 /* Debug */,
+				F3CCD1BC4E0FC8C2502A4D99ABE8B17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C95B8270BBD1C95014894E95A09F8DF /* Build configuration list for PBXNativeTarget "Pods-Ignite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE34E3A1BAB768F1F9B6150D7E7A130E /* Debug */,
+				8587C18B80469C5729FCD9010FE937E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -629,17 +638,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF08EF6D878ED59475683547A1B0C182 /* Build configuration list for PBXNativeTarget "Pods-Ignite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CE4438BE0C0D1F27F7824AC187DC0FA /* Debug */,
-				58369483D1F5AB56A4CFD2680713BB23 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

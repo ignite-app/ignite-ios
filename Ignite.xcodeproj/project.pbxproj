@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B349EAC2563BF550070A868 /* DaresDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B349EAB2563BF550070A868 /* DaresDataSource.swift */; };
 		95A297062558F2280033E330 /* LogbookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A297052558F2280033E330 /* LogbookController.swift */; };
 		95A2972E2558F7160033E330 /* Ignite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A2972C2558F7160033E330 /* Ignite.xcdatamodeld */; };
 		95E5C554255A36060047BE7C /* GoalTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5C553255A36060047BE7C /* GoalTextModel.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0CA68B1795BAB20AA26BB9F7 /* Pods-Ignite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ignite.release.xcconfig"; path = "Target Support Files/Pods-Ignite/Pods-Ignite.release.xcconfig"; sourceTree = "<group>"; };
 		6533B4D5291CCC880EC26E6B /* Pods_Ignite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ignite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B349EAB2563BF550070A868 /* DaresDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaresDataSource.swift; sourceTree = "<group>"; };
 		95A297052558F2280033E330 /* LogbookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookController.swift; sourceTree = "<group>"; };
 		95A2972D2558F7160033E330 /* Ignite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ignite.xcdatamodel; sourceTree = "<group>"; };
 		95E5C553255A36060047BE7C /* GoalTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTextModel.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				D91ECB6B2540F34000BCAE93 /* CameraController.swift */,
 				D91ECB6F2540F36500BCAE93 /* ConclusionController.swift */,
 				95E5C553255A36060047BE7C /* GoalTextModel.swift */,
+				7B349EAB2563BF550070A868 /* DaresDataSource.swift */,
 			);
 			path = Ignite;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				95E5C554255A36060047BE7C /* GoalTextModel.swift in Sources */,
 				D91ECB682540F30D00BCAE93 /* WorkingController.swift in Sources */,
 				95A297062558F2280033E330 /* LogbookController.swift in Sources */,
+				7B349EAC2563BF550070A868 /* DaresDataSource.swift in Sources */,
 				D91ECB702540F36500BCAE93 /* ConclusionController.swift in Sources */,
 				95A2972E2558F7160033E330 /* Ignite.xcdatamodeld in Sources */,
 				D9A3C5E5253B776B0030BB0F /* AppDelegate.swift in Sources */,
