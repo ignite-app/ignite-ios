@@ -12,6 +12,8 @@ class DarePromptController: UIViewController {
     
     var goalModel: GoalTextModel?
     
+    @IBOutlet weak var customDareText: UITextView!
+    @IBOutlet weak var popup: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,16 @@ class DarePromptController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func pressClosePopup(_ sender: Any) {
+    }
+    @IBAction func pressOKPopup(_ sender: Any) {
+    }
+    @IBAction func pressBackPopup(_ sender: Any) {
+    }
+    @IBAction func pressShuffleDares(_ sender: Any) {
+    }
+    @IBAction func pressCustomDare(_ sender: Any) {
+    }
     @IBAction func returnGoalPromptButton(_ sender: Any) {
     }
     

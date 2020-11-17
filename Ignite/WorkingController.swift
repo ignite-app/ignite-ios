@@ -16,6 +16,7 @@ class WorkingController: UIViewController {
     @IBOutlet weak var countdownTimer: CountdownLabel!
     @IBOutlet weak var progressView: UIProgressView!
     
+    @IBOutlet weak var popup: UIView!
     var goalModel: GoalTextModel?
     
     var totalTime = Double(0)
@@ -78,6 +79,12 @@ class WorkingController: UIViewController {
                 destination.goalModel = goalModel
             }
         }
+    }
+    @IBAction func closePopup(_ sender: Any) {
+    }
+    @IBAction func pressYesPopup(_ sender: Any) {
+    }
+    @IBAction func pressNoPopup(_ sender: Any) {
     }
     
 }

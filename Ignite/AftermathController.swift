@@ -33,7 +33,9 @@ class AftermathController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func pressPlay(_ sender: Any) {
+    }
+    
     @IBAction func returnCameraButton(_ sender: Any) {
     }
     

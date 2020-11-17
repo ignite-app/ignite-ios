@@ -10,6 +10,10 @@ import UIKit
 
 class SadConclusionController: UIViewController {
 
+    @IBOutlet weak var happyText: UILabel!
+    @IBOutlet weak var sadText: UILabel!
+    @IBOutlet weak var happyFire: UIImageView!
+    @IBOutlet weak var sadFire: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
