@@ -41,7 +41,7 @@ class ReflectionController: UIViewController, UITextViewDelegate {
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
-                print("Goal: \(String(describing: data.value(forKey: "goal")!)), Completed: \(String(describing: data.value(forKey: "didCompleteGoal")!))")
+                //print("Goal: \(String(describing: data.value(forKey: "goal")!)), Completed: \(String(describing: data.value(forKey: "didCompleteGoal")!))")
             }
         } catch {
             print("LogEntry retrieval failed.")
@@ -131,7 +131,7 @@ class ReflectionController: UIViewController, UITextViewDelegate {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
+                self.view.frame.origin.y -= keyboardSize.height/3
             }
         }
     }

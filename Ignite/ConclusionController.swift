@@ -1,5 +1,5 @@
 //
-//  AftermathController.swift
+//  ConclusionController.swift
 //  Ignite
 //
 //  Created by ageor0114 on 10/21/20.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class AftermathController: UIViewController {
+class ConclusionController: UIViewController {
 
-    @IBOutlet weak var finalImage: UIImageView!
-    
+    @IBOutlet weak var happyText: UILabel!
+    @IBOutlet weak var sadText: UILabel!
+    @IBOutlet weak var happyFire: UIImageView!
+    @IBOutlet weak var sadFire: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,12 +36,7 @@ class AftermathController: UIViewController {
     }
     */
 
-    @IBAction func returnCameraButton(_ sender: Any) {
-    }
-    
-    @IBAction func pressShare(_ sender: Any) {
-    }
-    
     @IBAction func pressHome(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
 }

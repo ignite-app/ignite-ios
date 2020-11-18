@@ -14,12 +14,14 @@ class WorkingController: UIViewController {
     @IBOutlet weak var goalLabel: UILabel!
 
     @IBOutlet weak var countdownTimer: CountdownLabel!
+    @IBOutlet weak var ropeBurner: UIImageView!
     
     @IBOutlet weak var ropeContainer: UIView!
+    @IBOutlet weak var popup: UIView!
+    var goalModel: GoalTextModel?
     
 
     @IBOutlet weak var rope: UIImageView!
-    var goalModel: GoalTextModel?
     var totalTime = Double(0)
     var timer : Timer?
     override func viewDidLoad() {
@@ -29,10 +31,8 @@ class WorkingController: UIViewController {
 //        countdownTimer.animationType = .Burn
         self.totalTime = countdownTimer.timeRemaining
         countdownTimer.start()
-        
-
         startTimer()
-        createFire()
+//        createFire()
 
     }
 
@@ -93,10 +93,9 @@ class WorkingController: UIViewController {
             self.timerZero()
         }
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            print(self.rope.center.x)
-            print(self.rope.frame.width -         self.rope.frame.width * CGFloat(percentage))
-            print(CGFloat(percentage))
-            self.rope.center.x -=  CGFloat(self.rope.frame.width + 2) * CGFloat(percentage)
+            let calc = CGFloat(self.rope.frame.width + 2) * CGFloat(percentage)
+            self.ropeBurner.center.x -= calc
+            self.rope.center.x -= calc
 //            self.rope.transform = CGAffineTransform(translationX:-(          self.rope.frame.width * CGFloat(percentage)), y: CGFloat(0))
 
         }, completion: nil)
@@ -123,6 +122,14 @@ class WorkingController: UIViewController {
             }
         }
     }
+
+    @IBAction func closePopup(_ sender: Any) {
+    }
+    @IBAction func pressYesPopup(_ sender: Any) {
+    }
+    @IBAction func pressNoPopup(_ sender: Any) {
+    }
+
 }
 
 

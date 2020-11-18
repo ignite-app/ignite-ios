@@ -14,6 +14,14 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     
     @IBOutlet var defeatImageView: UIImageView!
     
+
+    @IBOutlet weak var snapText: UILabel!
+    @IBOutlet weak var snapTitle: UILabel!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var playIcon: UIButton!
+    @IBOutlet weak var shareItTitle: UILabel!
+    @IBOutlet weak var shareItText: UILabel!
     var thumbnailType:String? = nil
     var defeatVideoURL:URL? = nil
     
@@ -63,8 +71,10 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         case kUTTypeImage, kUTTypeLivePhoto:
             
             let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-            defeatImageView.image = image
+            self.defeatImageView.image = image
+            self.playIcon.isHidden = true
             break
+            
         case kUTTypeMovie:
             
             // Get first frame of video for the thumbnail
@@ -77,7 +87,9 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                 
                 let cgImage = try imageGenerator.copyCGImage(at: .zero, actualTime: nil)
 
-                defeatImageView.image = UIImage(cgImage: cgImage)
+                self.defeatImageView.image = UIImage(cgImage: cgImage)
+                self.playIcon.isHidden = false
+                self.view.bringSubviewToFront(self.playIcon)
             } catch {
                print(error.localizedDescription)
                 
@@ -87,14 +99,23 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
             break
         }
         
+        self.snapTitle.isHidden = true
+        self.snapText.isHidden = true
+        
+        self.shareItTitle.isHidden = false
+        //self.view.bringSubviewToFront(self.shareItTitle)
+        self.shareItText.isHidden = false
+        //self.view.bringSubviewToFront(self.shareItText)
+        
+        self.cameraButton.isHidden = true
+        self.shareButton.isHidden = false
+        //self.view.bringSubviewToFront(self.cameraButton)
+        
         picker.dismiss(animated: true)
     }
     
-    @IBAction func didTapThumbnail(_ sender: Any) {
-        print("Thumbnail tapped")
-        print(self.thumbnailType!)
+    func playVideo() {
         if self.thumbnailType == "public.movie" && self.defeatVideoURL != nil {
-            print("Video tapped")
             
             // Create an AVPlayer, passing it the HTTP Live Streaming URL.
             let player = AVPlayer(url: self.defeatVideoURL!)
@@ -110,7 +131,18 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         }
     }
     
-    @IBAction func pressHome(_ sender: Any) {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    @IBAction func pressShare(_ sender: Any) {
+    }
+    
+    @IBAction func didTapPlay(_ sender: Any) {
+        playVideo()
+    }
+    
+    @IBAction func didTapThumbnail(_ sender: Any) {
+        playVideo()
+    }
+    
+    @IBAction func pressArrow(_ sender: Any) {
+        performSegue(withIdentifier: "showConclusion", sender: self)
     }
 }

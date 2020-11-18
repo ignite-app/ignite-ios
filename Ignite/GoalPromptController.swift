@@ -14,10 +14,13 @@ class GoalPromptController: UIViewController {
     
     @IBOutlet weak var goalText: UITextView!
     
-    @IBOutlet weak var timeText: UITextField!
-    
+    @IBOutlet weak var timeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Tap to close keyboard
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
@@ -52,5 +55,13 @@ class GoalPromptController: UIViewController {
                 destination.goalModel = GoalTextModel(goalText: goalText.text)
             }
         }
+    }
+    @IBAction func didTapTime(_ sender: Any) {
+    }
+    
+    // Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
