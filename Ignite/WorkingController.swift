@@ -19,7 +19,8 @@ class WorkingController: UIViewController {
     @IBOutlet weak var ropeContainer: UIView!
     @IBOutlet weak var popup: UIView!
     var goalModel: GoalTextModel?
-    
+    var originRopeX = CGFloat(0)
+    var originRopeBurnerX = CGFloat(0)
 
     @IBOutlet weak var rope: UIImageView!
     var totalTime = Double(0)
@@ -28,7 +29,9 @@ class WorkingController: UIViewController {
         super.viewDidLoad()
         self.goalLabel.text = goalModel?.goalText
         countdownTimer.setCountDownTime(minutes: 30)
-//        countdownTimer.animationType = .Burn
+
+        self.originRopeX = self.rope.center.x
+        self.originRopeBurnerX = self.ropeBurner.center.x
         self.totalTime = countdownTimer.timeRemaining
         countdownTimer.start()
         startTimer()
@@ -38,7 +41,6 @@ class WorkingController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -61,7 +63,6 @@ class WorkingController: UIViewController {
             fire.lifetimeRange = 0.5
             fire.color = UIColor(red: 0.6, green: 0.4, blue: 0.2, alpha: 0.6).cgColor
 
-//            init(red:0.8, green: 0.4, blue: 0.2, alpha: 0.6);
             fire.contents = UIImage(named: "ropeBurner")?.cgImage
             fire.emissionLongitude = CGFloat(Double.pi);
             fire.velocity = 20;
@@ -82,32 +83,35 @@ class WorkingController: UIViewController {
     }
     
     @objc func updateProgressBar() {
+        
         let percentage = 1/(self.totalTime)
-
+        let timeElapsed = self.countdownTimer.timeCounted
         //print(self.countdownTimer.timeRemaining)
         if (self.countdownTimer.isPaused) {
             self.countdownTimer.addTime(time: 1)
         }
-        if (self.countdownTimer.timeRemaining == 0) {
-            self.countdownTimer.pause()
+        print(self.countdownTimer.timeRemaining)
+        if (self.countdownTimer.timeRemaining <= 0) {
             self.timerZero()
         }
         UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            let calc = CGFloat(self.rope.frame.width + 2) * CGFloat(percentage)
-            self.ropeBurner.center.x -= calc
-            self.rope.center.x -= calc
-//            self.rope.transform = CGAffineTransform(translationX:-(          self.rope.frame.width * CGFloat(percentage)), y: CGFloat(0))
-
+            let calc = CGFloat(self.rope.frame.width + 2) * CGFloat(percentage) * CGFloat(timeElapsed)
+            self.ropeBurner.center.x = self.originRopeBurnerX - calc
+            self.rope.center.x = self.originRopeX - calc
         }, completion: nil)
     }
 
     func timerZero() {
-        if timer != nil {
-          timer!.invalidate()
-          timer = nil
+        let state = UIApplication.shared.applicationState
+        if state == .active {
+            if timer != nil {
+              timer!.invalidate()
+              timer = nil
+            }
+            self.rope.isHidden = true
+            self.ropeBurner.isHidden = true
+            self.performSegue(withIdentifier: "showReflection", sender: nil)
         }
-        self.performSegue(withIdentifier: "showReflection", sender: nil)
-        
     }
 
     @IBAction func pressFinished(_ sender: Any) {
