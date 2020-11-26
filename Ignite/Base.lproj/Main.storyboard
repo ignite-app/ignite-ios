@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ShareTechMono-Regular.ttf">
+            <string>ShareTechMono-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Logbook Controller-->
         <scene sceneID="1lt-U4-Z9S">
@@ -501,7 +506,7 @@ So good luck, stay focused, and may the odds be ever in your favor!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-8L-JB3" customClass="CountdownLabel" customModule="CountdownLabel">
                                 <rect key="frame" x="69" y="313" width="217" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" name="ShareTechMono-Regular" family="Share Tech Mono" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -880,7 +885,7 @@ Keep up the awesome work!</string>
     </scenes>
     <designables>
         <designable name="Hxt-8L-JB3">
-            <size key="intrinsicContentSize" width="80" height="41"/>
+            <size key="intrinsicContentSize" width="92" height="38.5"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

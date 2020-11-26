@@ -36,7 +36,11 @@ class WorkingController: UIViewController {
         countdownTimer.start()
         startTimer()
 //        createFire()
-
+        self.popup.alpha = 0.95
+        //100%
+//        self.view.backgroundColor = UIColor(red: 36/255, green: 48/255, blue: 78/255,alpha: 1)
+//        self.view.backgroundColor = UIColor(red: 80/255, green: 48/255, blue: 78/255,alpha: 1)
+//255, 71, 87
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,8 +78,6 @@ class WorkingController: UIViewController {
             return fire
         }
     
-    
-    
     func startTimer() {
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateProgressBar), userInfo: nil, repeats: true)
@@ -85,20 +87,18 @@ class WorkingController: UIViewController {
     @objc func updateProgressBar() {
         
         let percentage = 1/(self.totalTime)
-        let timeElapsed = self.countdownTimer.timeCounted
-        //print(self.countdownTimer.timeRemaining)
-        if (self.countdownTimer.isPaused) {
-            self.countdownTimer.addTime(time: 1)
+        let timeElapsed = self.totalTime - self.countdownTimer.timeRemaining
+        if (!self.countdownTimer.isPaused) {
+            print(self.countdownTimer.timeRemaining)
+            if (self.countdownTimer.timeRemaining <= 0 && self.popup.isHidden) {
+                self.timerZero()
+            }
+            UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
+                let calc = CGFloat(self.rope.frame.width + 2) * CGFloat(percentage) * CGFloat(timeElapsed)
+                self.ropeBurner.center.x = self.originRopeBurnerX - calc
+                self.rope.center.x = self.originRopeX - calc
+            }, completion: nil)
         }
-        print(self.countdownTimer.timeRemaining)
-        if (self.countdownTimer.timeRemaining <= 0) {
-            self.timerZero()
-        }
-        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations: {
-            let calc = CGFloat(self.rope.frame.width + 2) * CGFloat(percentage) * CGFloat(timeElapsed)
-            self.ropeBurner.center.x = self.originRopeBurnerX - calc
-            self.rope.center.x = self.originRopeX - calc
-        }, completion: nil)
     }
 
     func timerZero() {
@@ -110,13 +110,17 @@ class WorkingController: UIViewController {
             }
             self.rope.isHidden = true
             self.ropeBurner.isHidden = true
-            self.performSegue(withIdentifier: "showReflection", sender: nil)
+            if (self.popup.isHidden) {
+                self.performSegue(withIdentifier: "showReflection", sender: nil)
+            }
         }
     }
 
     @IBAction func pressFinished(_ sender: Any) {
-        countdownTimer.pause()
-        self.performSegue(withIdentifier: "showReflection", sender: self)
+        UIView.animate(withDuration: 2, delay: 0.5, options: .curveLinear, animations: {
+            self.popup.isHidden = false
+        }, completion: nil)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -128,10 +132,14 @@ class WorkingController: UIViewController {
     }
 
     @IBAction func closePopup(_ sender: Any) {
+        self.popup.isHidden = true
     }
     @IBAction func pressYesPopup(_ sender: Any) {
+        self.performSegue(withIdentifier: "showReflection", sender: self)
     }
     @IBAction func pressNoPopup(_ sender: Any) {
+        self.popup.isHidden = true
+
     }
 
 }

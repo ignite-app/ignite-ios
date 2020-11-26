@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25AA14C2256F6DE800209490 /* ShareTechMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25AA14C1256F6DE800209490 /* ShareTechMono-Regular.ttf */; };
 		95A297062558F2280033E330 /* LogbookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A297052558F2280033E330 /* LogbookController.swift */; };
 		95A2972E2558F7160033E330 /* Ignite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A2972C2558F7160033E330 /* Ignite.xcdatamodeld */; };
 		95E5C554255A36060047BE7C /* GoalTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5C553255A36060047BE7C /* GoalTextModel.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0CA68B1795BAB20AA26BB9F7 /* Pods-Ignite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ignite.release.xcconfig"; path = "Target Support Files/Pods-Ignite/Pods-Ignite.release.xcconfig"; sourceTree = "<group>"; };
+		25AA14C1256F6DE800209490 /* ShareTechMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ShareTechMono-Regular.ttf"; path = "../../../../../Downloads/Share_Tech_Mono/ShareTechMono-Regular.ttf"; sourceTree = "<group>"; };
 		6533B4D5291CCC880EC26E6B /* Pods_Ignite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ignite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A297052558F2280033E330 /* LogbookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookController.swift; sourceTree = "<group>"; };
 		95A2972D2558F7160033E330 /* Ignite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ignite.xcdatamodel; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		D9A3C617253B84610030BB0F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				25AA14C1256F6DE800209490 /* ShareTechMono-Regular.ttf */,
 				D97FB3DD2541303200B5C994 /* Poppins-Bold.ttf */,
 			);
 			path = fonts;
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A3C5EF253B776B0030BB0F /* LaunchScreen.storyboard in Resources */,
+				25AA14C2256F6DE800209490 /* ShareTechMono-Regular.ttf in Resources */,
 				D9A3C5EC253B776B0030BB0F /* Assets.xcassets in Resources */,
 				D9A3C5EA253B776B0030BB0F /* Main.storyboard in Resources */,
 				D97FB3DE2541303200B5C994 /* Poppins-Bold.ttf in Resources */,
