@@ -89,7 +89,6 @@ class WorkingController: UIViewController {
         let percentage = 1/(self.totalTime)
         let timeElapsed = self.totalTime - self.countdownTimer.timeRemaining
         if (!self.countdownTimer.isPaused) {
-            print(self.countdownTimer.timeRemaining)
             if (self.countdownTimer.timeRemaining <= 0 && self.popup.isHidden) {
                 self.timerZero()
             }

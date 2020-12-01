@@ -23,6 +23,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     @IBOutlet weak var shareItTitle: UILabel!
     @IBOutlet weak var shareItText: UILabel!
     var thumbnailType:String? = nil
+    var defeatImageURL: URL? = nil
     var defeatVideoURL:URL? = nil
     
     var goalModel: GoalTextModel?
@@ -53,12 +54,36 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     }
     
     @IBAction func takePicture(_ sender: Any) {
-        let ip = UIImagePickerController()
-        ip.sourceType = .camera
-        ip.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String, kUTTypeLivePhoto as String]
-        ip.videoQuality = .typeHigh
-        ip.delegate = self
-        present(ip, animated: true)
+        if AVCaptureDevice.authorizationStatus(for: .video) == .denied || AVCaptureDevice.authorizationStatus(for: .audio) == .denied {
+            let alertController = UIAlertController (title: "Enable Camera + Microphone Access", message: "You need to enable camera and microphone access in settings to share a photo/video with your friends.", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+            alertController.addAction(cancelAction)
+            
+            let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+                
+                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                    return
+                }
+
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                        print("Settings opened: \(success)") // Prints true
+                    })
+                }
+            }
+            alertController.addAction(settingsAction)
+            
+            alertController.preferredAction = settingsAction
+
+            present(alertController, animated: true, completion: nil)
+        } else {
+            let ip = UIImagePickerController()
+            ip.sourceType = .camera
+            ip.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String, kUTTypeLivePhoto as String]
+            ip.videoQuality = .typeHigh
+            ip.delegate = self
+            present(ip, animated: true)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -132,6 +157,20 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     }
     
     @IBAction func pressShare(_ sender: Any) {
+        
+        if (self.thumbnailType == "public.movie" && self.defeatVideoURL != nil) {
+            let activityItems: [Any] = [self.defeatVideoURL!]
+            let activityController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            activityController.popoverPresentationController?.sourceView = view
+            activityController.popoverPresentationController?.sourceRect = view.frame
+            self.present(activityController, animated: true, completion: nil)
+        } else {
+            let activityItems: [Any] = [self.defeatImageView.image!]
+            let activityController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            activityController.popoverPresentationController?.sourceView = view
+            activityController.popoverPresentationController?.sourceRect = view.frame
+            self.present(activityController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapPlay(_ sender: Any) {
