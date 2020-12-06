@@ -19,6 +19,7 @@ class DarePromptController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var popup: UIView!
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var dimmingView: UIView!
     let dataSource = DaresDataSource()
     
     var dareSet = Set<String>()
