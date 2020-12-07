@@ -213,7 +213,7 @@
                                 <rect key="frame" x="44" y="450" width="286" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93254786730000006" green="0.95217448469999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <state key="normal" title="01:00:00">
                                     <color key="titleColor" red="0.33375793695449829" green="0.41107854247093201" blue="0.62264591455459595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -938,6 +938,6 @@ Keep up the awesome work!</string>
         <segue reference="3cV-yV-S3c"/>
         <segue reference="Ls6-Je-fdQ"/>
         <segue reference="5IJ-6I-4Mq"/>
-        <segue reference="e4V-5P-QxH"/>
+        <segue reference="DbK-P7-ZCM"/>
     </inferredMetricsTieBreakers>
 </document>
